@@ -1,0 +1,122 @@
+2024-04-09 13:42:45.254 PDT [482] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.314 s, sync=0.001 s, total=0.340 s; sync files=4, longest=0.001 s, average=0.001 s; distance=1 kB, estimate=159 kB; lsn=0/8461D08, redo lsn=0/8461CD0
+2024-04-09 13:47:44.250 PDT [482] LOG:  checkpoint starting: time
+2024-04-09 13:47:44.566 PDT [482] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.306 s, sync=0.002 s, total=0.317 s; sync files=4, longest=0.001 s, average=0.001 s; distance=1 kB, estimate=143 kB; lsn=0/8462268, redo lsn=0/8462230
+2024-04-09 13:52:44.563 PDT [482] LOG:  checkpoint starting: time
+2024-04-09 13:52:44.872 PDT [482] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.305 s, sync=0.002 s, total=0.310 s; sync files=4, longest=0.001 s, average=0.001 s; distance=1 kB, estimate=129 kB; lsn=0/8462868, redo lsn=0/8462830
+2024-04-09 13:57:44.868 PDT [482] LOG:  checkpoint starting: time
+2024-04-09 13:57:45.176 PDT [482] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.303 s, sync=0.002 s, total=0.308 s; sync files=4, longest=0.001 s, average=0.001 s; distance=1 kB, estimate=116 kB; lsn=0/8462FD0, redo lsn=0/8462F98
+2024-04-09 13:59:22.518 PDT [38601] ERROR:  column "Hummus" does not exist at character 122
+2024-04-09 13:59:22.518 PDT [38601] STATEMENT:  SELECT description, nutrient_id FROM (food JOIN food_nutrient ON food.fdc_id = food_nutrient.fdc_id) WHERE description = "Hummus"
+2024-04-09 14:02:44.171 PDT [482] LOG:  checkpoint starting: time
+2024-04-09 14:02:44.479 PDT [482] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.305 s, sync=0.002 s, total=0.309 s; sync files=4, longest=0.001 s, average=0.001 s; distance=2 kB, estimate=105 kB; lsn=0/8463800, redo lsn=0/84637C8
+2024-04-09 14:07:44.476 PDT [482] LOG:  checkpoint starting: time
+2024-04-09 14:07:44.793 PDT [482] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.308 s, sync=0.002 s, total=0.317 s; sync files=4, longest=0.001 s, average=0.001 s; distance=2 kB, estimate=94 kB; lsn=0/8464018, redo lsn=0/8463FC8
+2024-04-09 14:12:44.790 PDT [482] LOG:  checkpoint starting: time
+2024-04-09 14:12:45.112 PDT [482] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.309 s, sync=0.002 s, total=0.322 s; sync files=4, longest=0.001 s, average=0.001 s; distance=2 kB, estimate=85 kB; lsn=0/8464A30, redo lsn=0/84649F8
+2024-04-09 14:16:46.291 PDT [39797] ERROR:  syntax error at or near "{" at character 75
+2024-04-09 14:16:46.291 PDT [39797] STATEMENT:  SELECT name, nutrient_id, amount FROM food_nutrient where nutrient_id in ({nutrientIDList}));
+2024-04-09 14:17:44.108 PDT [482] LOG:  checkpoint starting: time
+2024-04-09 14:17:44.418 PDT [482] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.304 s, sync=0.002 s, total=0.311 s; sync files=4, longest=0.001 s, average=0.001 s; distance=2 kB, estimate=77 kB; lsn=0/84653B0, redo lsn=0/8465378
+2024-04-09 14:20:55.012 PDT [39930] ERROR:  syntax error at or near "as" at character 127
+2024-04-09 14:20:55.012 PDT [39930] STATEMENT:  SELECT description, nutrient_id FROM (food JOIN food_nutrient ON food.fdc_id = food_nutrient.fdc_id) WHERE description = ($1) as s;
+2024-04-09 14:21:16.107 PDT [39954] ERROR:  syntax error at or near "as" at character 127
+2024-04-09 14:21:16.107 PDT [39954] STATEMENT:  SELECT description, nutrient_id FROM (food JOIN food_nutrient ON food.fdc_id = food_nutrient.fdc_id) WHERE description = ($1) as s;
+2024-04-09 14:21:42.397 PDT [39974] ERROR:  syntax error at or near "as" at character 127
+2024-04-09 14:21:42.397 PDT [39974] STATEMENT:  SELECT description, nutrient_id FROM (food JOIN food_nutrient ON food.fdc_id = food_nutrient.fdc_id) WHERE description = ($1) as s;
+2024-04-09 14:22:44.414 PDT [482] LOG:  checkpoint starting: time
+2024-04-09 14:22:44.723 PDT [482] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.305 s, sync=0.002 s, total=0.309 s; sync files=4, longest=0.001 s, average=0.001 s; distance=2 kB, estimate=69 kB; lsn=0/8465F80, redo lsn=0/8465F48
+2024-04-09 14:24:48.530 PDT [40088] ERROR:  syntax error at or near ";" at character 200
+2024-04-09 14:24:48.530 PDT [40088] STATEMENT:  SELECT name, nutrient_id, amount FROM food_nutrient where nutrient_id in (SELECT description, nutrient_id FROM (food JOIN food_nutrient ON food.fdc_id = food_nutrient.fdc_id) WHERE description = ($1);
+2024-04-09 14:25:22.319 PDT [40118] ERROR:  column "name" does not exist at character 8
+2024-04-09 14:25:22.319 PDT [40118] STATEMENT:  SELECT name, nutrient_id, amount FROM food_nutrient where nutrient_id in (SELECT description, nutrient_id FROM (food JOIN food_nutrient ON food.fdc_id = food_nutrient.fdc_id) WHERE description = ($1));
+2024-04-09 14:26:47.210 PDT [40175] ERROR:  column "nutrient_id" does not exist at character 14
+2024-04-09 14:26:47.210 PDT [40175] HINT:  Perhaps you meant to reference the column "nutrient.nutrient_nbr".
+2024-04-09 14:26:47.210 PDT [40175] STATEMENT:  SELECT name, nutrient_id, amount FROM nutrient where nutrient_id in (SELECT description, nutrient_id FROM (food JOIN food_nutrient ON food.fdc_id = food_nutrient.fdc_id) WHERE description = ($1));
+2024-04-09 14:27:44.719 PDT [482] LOG:  checkpoint starting: time
+2024-04-09 14:27:45.067 PDT [482] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.345 s, sync=0.001 s, total=0.349 s; sync files=4, longest=0.001 s, average=0.001 s; distance=3 kB, estimate=63 kB; lsn=0/8466B80, redo lsn=0/8466B48
+2024-04-09 14:28:14.112 PDT [38601] ERROR:  operator does not exist: character varying = integer at character 47
+2024-04-09 14:28:14.112 PDT [38601] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2024-04-09 14:28:14.112 PDT [38601] STATEMENT:  select * from food_nutrient where nutrient_id = 957
+2024-04-09 14:30:13.523 PDT [40248] ERROR:  syntax error at or near "where" at character 67
+2024-04-09 14:30:13.523 PDT [40248] STATEMENT:  SELECT name, nutrient_id, amount FROM nutrient JOIN food_nutrient where nutrient_id in (SELECT description, nutrient_id FROM (food JOIN food_nutrient ON food.fdc_id = food_nutrient.fdc_id) WHERE description = ($1));
+2024-04-09 14:32:14.764 PDT [40330] ERROR:  syntax error at or near ";" at character 208
+2024-04-09 14:32:14.764 PDT [40330] STATEMENT:  SELECT name, nutrient_id, amount FROM nutrient join (SELECT description, nutrient_id FROM (food JOIN food_nutrient ON food.fdc_id = food_nutrient.fdc_id) WHERE description = ($1) and nutrient.id=nutrient_id);
+2024-04-09 14:32:44.063 PDT [482] LOG:  checkpoint starting: time
+2024-04-09 14:32:44.376 PDT [482] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.304 s, sync=0.002 s, total=0.313 s; sync files=4, longest=0.001 s, average=0.001 s; distance=2 kB, estimate=57 kB; lsn=0/8467748, redo lsn=0/8467710
+2024-04-09 14:33:40.285 PDT [40365] ERROR:  column "amount" does not exist at character 36
+2024-04-09 14:33:40.285 PDT [40365] STATEMENT:  SELECT nutrient.name, nutrient_id, amount 
+	FROM nutrient 
+	JOIN (
+	    SELECT description, nutrient_id 
+	    FROM food 
+	    JOIN food_nutrient ON food.fdc_id = food_nutrient.fdc_id 
+	    WHERE description = $1
+	) AS subquery ON nutrient.id = subquery.nutrient_id;
+2024-04-09 14:37:44.372 PDT [482] LOG:  checkpoint starting: time
+2024-04-09 14:37:44.681 PDT [482] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.305 s, sync=0.001 s, total=0.309 s; sync files=4, longest=0.001 s, average=0.001 s; distance=3 kB, estimate=51 kB; lsn=0/84690B8, redo lsn=0/8468540
+2024-04-09 14:42:44.677 PDT [482] LOG:  checkpoint starting: time
+2024-04-09 14:42:44.983 PDT [482] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.304 s, sync=0.001 s, total=0.307 s; sync files=4, longest=0.001 s, average=0.001 s; distance=3 kB, estimate=46 kB; lsn=0/8469288, redo lsn=0/8469250
+2024-04-09 15:42:20.523 PDT [41326] ERROR:  column "nutrientnum" of relation "userlog" does not exist at character 32
+2024-04-09 15:42:20.523 PDT [41326] STATEMENT:  INSERT INTO userLog (foodname, nutrientNum, nutrient_name, date) VALUES ($1, $2, $3, $4);
+2024-04-09 15:42:42.639 PDT [41343] ERROR:  insert or update on table "userlog" violates foreign key constraint "fk_nutrient_num"
+2024-04-09 15:42:42.639 PDT [41343] DETAIL:  Key (nutrient_num)=(1051) is not present in table "nutrient".
+2024-04-09 15:42:42.639 PDT [41343] STATEMENT:  INSERT INTO userLog (foodname, nutrient_num, nutrient_name, date) VALUES ($1, $2, $3, $4);
+2024-04-09 15:44:01.352 PDT [41354] ERROR:  operator does not exist: character varying = integer at character 43
+2024-04-09 15:44:01.352 PDT [41354] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2024-04-09 15:44:01.352 PDT [41354] STATEMENT:  select * from nutrient where nutrient_nbr = 1051
+2024-04-09 15:44:43.588 PDT [482] LOG:  checkpoint starting: time
+2024-04-09 15:44:43.909 PDT [482] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.308 s, sync=0.006 s, total=0.322 s; sync files=4, longest=0.005 s, average=0.002 s; distance=3 kB, estimate=42 kB; lsn=0/8469FB0, redo lsn=0/8469F78
+2024-04-09 15:46:34.592 PDT [41407] ERROR:  insert or update on table "userlog" violates foreign key constraint "fk_nutrient_num"
+2024-04-09 15:46:34.592 PDT [41407] DETAIL:  Key (nutrient_num)=(1051) is not present in table "nutrient".
+2024-04-09 15:46:34.592 PDT [41407] STATEMENT:  INSERT INTO userLog (foodname, nutrient_num, nutrient_name, date) VALUES ($1, $2, $3, $4);
+2024-04-09 15:47:14.852 PDT [41426] ERROR:  insert or update on table "userlog" violates foreign key constraint "fk_nutrient_num"
+2024-04-09 15:47:14.852 PDT [41426] DETAIL:  Key (nutrient_num)=(1051) is not present in table "nutrient".
+2024-04-09 15:47:14.852 PDT [41426] STATEMENT:  INSERT INTO userLog (foodname, nutrient_num, nutrient_name, date) VALUES ($1, $2, $3, $4);
+2024-04-09 15:49:43.909 PDT [482] LOG:  checkpoint starting: time
+2024-04-09 15:49:47.606 PDT [482] LOG:  checkpoint complete: wrote 37 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.689 s, sync=0.006 s, total=3.697 s; sync files=24, longest=0.001 s, average=0.001 s; distance=202 kB, estimate=202 kB; lsn=0/849CB28, redo lsn=0/849CAF0
+2024-04-09 15:52:47.572 PDT [41603] ERROR:  column "amountofnutrient" of relation "userlog" does not exist at character 67
+2024-04-09 15:52:47.572 PDT [41603] STATEMENT:  INSERT INTO userLog (foodname, nutrient_num, nutrient_name, date, amountOfNutrient) VALUES ($1, $2, $3, $4, $5, $6);
+2024-04-09 15:53:24.868 PDT [41622] ERROR:  column "amountofnutrient" of relation "userlog" does not exist at character 67
+2024-04-09 15:53:24.868 PDT [41622] STATEMENT:  INSERT INTO userLog (foodname, nutrient_num, nutrient_name, date, amountOfNutrient, scaleOfAmount) VALUES ($1, $2, $3, $4, $5, $6);
+2024-04-09 15:54:14.733 PDT [41653] ERROR:  column "amountofnutrient" of relation "userlog" does not exist at character 67
+2024-04-09 15:54:14.733 PDT [41653] STATEMENT:  INSERT INTO userLog (foodname, nutrient_num, nutrient_name, date, amountOfNutrient, scaleOfAmount) VALUES ($1, $2, $3, $4, $5, $6);
+2024-04-09 15:54:32.716 PDT [41422] ERROR:  column "amountofnutrient" does not exist at character 8
+2024-04-09 15:54:32.716 PDT [41422] HINT:  Perhaps you meant to reference the column "userlog.amountOfNutrient".
+2024-04-09 15:54:32.716 PDT [41422] STATEMENT:  select amountOfNutrient from userLog
+2024-04-09 15:54:43.604 PDT [482] LOG:  checkpoint starting: time
+2024-04-09 15:54:44.424 PDT [482] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.810 s, sync=0.003 s, total=0.820 s; sync files=8, longest=0.001 s, average=0.001 s; distance=32 kB, estimate=185 kB; lsn=0/84A4D98, redo lsn=0/84A4D60
+2024-04-09 15:55:49.839 PDT [41422] ERROR:  column userlog.amountofnutrient does not exist at character 8
+2024-04-09 15:55:49.839 PDT [41422] HINT:  Perhaps you meant to reference the column "userlog.amountOfNutrient".
+2024-04-09 15:55:49.839 PDT [41422] STATEMENT:  select userLog.amountOfNutrient from userLog
+2024-04-09 15:55:58.957 PDT [41422] ERROR:  column userlog.amountofnutrient does not exist at character 8
+2024-04-09 15:55:58.957 PDT [41422] HINT:  Perhaps you meant to reference the column "userlog.amountOfNutrient".
+2024-04-09 15:55:58.957 PDT [41422] STATEMENT:  select userlog.amountOfNutrient from userLog
+2024-04-09 15:58:39.483 PDT [41756] ERROR:  column "scaleofamount" of relation "userlog" does not exist at character 67
+2024-04-09 15:58:39.483 PDT [41756] STATEMENT:  INSERT INTO userLog (foodname, nutrient_num, nutrient_name, date, scaleOfAmount) VALUES ($1, $2, $3, $4, $5);
+2024-04-09 15:59:51.253 PDT [41782] ERROR:  column "amountofnutrient" does not exist at character 8
+2024-04-09 15:59:51.253 PDT [41782] HINT:  Perhaps you meant to reference the column "userlog.amountOfNutrient".
+2024-04-09 15:59:51.253 PDT [41782] STATEMENT:  select amountOfNutrient from userlog
+2024-04-09 16:00:19.559 PDT [41782] ERROR:  column "amountofnutrient" does not exist at character 8
+2024-04-09 16:00:19.559 PDT [41782] HINT:  Perhaps you meant to reference the column "userlog.amountOfNutrient".
+2024-04-09 16:00:19.559 PDT [41782] STATEMENT:  select amountOfNutrient from userlog
+2024-04-09 16:01:44.681 PDT [41804] ERROR:  relation "userLog" does not exist at character 32
+2024-04-09 16:01:44.681 PDT [41804] STATEMENT:  select "amountOfNutrient" from "userLog"
+2024-04-09 16:02:21.405 PDT [41804] ERROR:  column "amountofnutrient" does not exist at character 8
+2024-04-09 16:02:21.405 PDT [41804] HINT:  Perhaps you meant to reference the column "userlog.amountOfNutrient".
+2024-04-09 16:02:21.405 PDT [41804] STATEMENT:  select amountOfNutrient from userlog
+2024-04-09 16:04:43.419 PDT [482] LOG:  checkpoint starting: time
+2024-04-09 16:04:44.953 PDT [482] LOG:  checkpoint complete: wrote 16 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.524 s, sync=0.003 s, total=1.534 s; sync files=10, longest=0.001 s, average=0.001 s; distance=74 kB, estimate=174 kB; lsn=0/84B7868, redo lsn=0/84B7830
+2024-04-09 16:09:43.951 PDT [482] LOG:  checkpoint starting: time
+2024-04-09 16:09:45.282 PDT [482] LOG:  checkpoint complete: wrote 14 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.322 s, sync=0.004 s, total=1.332 s; sync files=11, longest=0.001 s, average=0.001 s; distance=117 kB, estimate=169 kB; lsn=0/84D4F38, redo lsn=0/84D4F00
+2024-04-09 16:21:22.353 PDT [42790] ERROR:  argument of WHERE must be type boolean, not type date at character 29
+2024-04-09 16:21:22.353 PDT [42790] STATEMENT:  SELECT * FROM userLog where date
+2024-04-09 20:40:27.039 PDT [482] LOG:  checkpoint starting: time
+2024-04-09 20:40:27.272 PDT [482] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.213 s, sync=0.002 s, total=0.235 s; sync files=2, longest=0.001 s, average=0.001 s; distance=22 kB, estimate=154 kB; lsn=0/84DA928, redo lsn=0/84DA8F0
+2024-04-09 20:45:27.265 PDT [482] LOG:  checkpoint starting: time
+2024-04-09 20:45:28.484 PDT [482] LOG:  checkpoint complete: wrote 12 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.210 s, sync=0.003 s, total=1.219 s; sync files=9, longest=0.001 s, average=0.001 s; distance=70 kB, estimate=145 kB; lsn=0/84EC348, redo lsn=0/84EC310
+2024-04-09 20:50:27.478 PDT [482] LOG:  checkpoint starting: time
+2024-04-09 20:50:28.089 PDT [482] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.607 s, sync=0.002 s, total=0.611 s; sync files=5, longest=0.001 s, average=0.001 s; distance=45 kB, estimate=135 kB; lsn=0/84F7808, redo lsn=0/84F77D0
+2024-04-09 20:55:27.083 PDT [482] LOG:  checkpoint starting: time
+2024-04-09 20:55:27.604 PDT [482] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.510 s, sync=0.002 s, total=0.521 s; sync files=4, longest=0.001 s, average=0.001 s; distance=16 kB, estimate=123 kB; lsn=0/84FB9C8, redo lsn=0/84FB990
+2024-04-09 22:07:11.922 PDT [47995] ERROR:  syntax error at or near "cd" at character 1
+2024-04-09 22:07:11.922 PDT [47995] STATEMENT:  cd e.man_xo@Emans-MBP ~ % /Library/PostgreSQL/16/scripts/runpsql.sh;
